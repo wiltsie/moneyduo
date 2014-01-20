@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+
+<div class="container">
+<h3>Cash Flow</h3>
+</div>
+
+<% else %>
+<div class="jumbotron center">
+	<h1>MoneyDuo</h1>
+	<p>
+	        <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+	        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+	</p>
+
+</div>
+<% end %>
